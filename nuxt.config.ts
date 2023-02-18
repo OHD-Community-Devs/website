@@ -8,8 +8,6 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
-    // https://github.com/huntersofbook/huntersofbook/tree/main/packages/naive-ui-nuxt
-    '@huntersofbook/naive-ui-nuxt',
   ],
   build: {
     transpile: ['@headlessui/vue'],
