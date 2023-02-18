@@ -4,11 +4,7 @@
       <div class="hero-container1">
         <div class="hero-container2">
           <header data-thq="thq-navbar" class="hero-navbar">
-            <img
-              :alt="Branding_alt"
-              :src="Branding_src"
-              class="hero-branding"
-            />
+            <img :alt="Branding_alt" :src="Branding_src" class="hero-branding" />
           </header>
           <btn-group1></btn-group1>
         </div>
@@ -25,17 +21,17 @@ export default {
   props: {
     Branding_alt: {
       type: String,
-      default: 'image'
+      default: 'image',
     },
     Branding_src: {
       type: String,
       default:
-        'https://cdn.statically.io/gh/Sudo-Ivan/MyWebsite-Assets/main/images/ohddev/web/logodesign1.png'
-    }
+        'https://cdn.statically.io/gh/Sudo-Ivan/MyWebsite-Assets/main/images/ohddev/web/logodesign1.png',
+    },
   },
   components: {
-    BtnGroup1
-  }
+    BtnGroup1,
+  },
 }
 </script>
 
@@ -90,7 +86,7 @@ export default {
   width: 120px;
   object-fit: cover;
 }
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
   .hero-hero {
     padding-left: 0px;
   }
@@ -111,7 +107,7 @@ export default {
     margin-left: var(--dl-space-space-twounits);
   }
 }
-@media (max-width: 1200px) {
+@media(max-width: 1200px) {
   .hero-container2 {
     width: 100%;
   }
@@ -122,7 +118,7 @@ export default {
     justify-content: flex-start;
   }
 }
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .hero-hero {
     padding-left: var(--dl-space-space-oneandhalfunits);
   }
@@ -139,7 +135,7 @@ export default {
     justify-content: flex-start;
   }
 }
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .hero-container2 {
     width: 100%;
   }
@@ -147,7 +143,7 @@ export default {
     width: 100%;
   }
 }
-@media (max-width: 479px) {
+@media(max-width: 479px) {
   .hero-hero {
     padding-left: 0px;
   }

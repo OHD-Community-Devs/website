@@ -33,29 +33,29 @@ export default {
   props: {
     Wiki: {
       type: String,
-      default: 'Wiki'
+      default: 'Wiki',
     },
     link_Wiki: {
       type: String,
-      default: 'https://wiki.ohdmodding.dev'
+      default: 'https://wiki.ohdmodding.dev',
     },
     Discord: {
       type: String,
-      default: 'Discord'
+      default: 'Discord',
     },
     link_Discord: {
       type: String,
-      default: 'https://discord.gg/HW7czZnA7p'
+      default: 'https://discord.gg/HW7czZnA7p',
     },
     GitHub: {
       type: String,
-      default: 'GitHub'
+      default: 'GitHub',
     },
     link_GitHub: {
       type: String,
-      default: 'https://github.com/OHD-Community-Devs'
-    }
-  }
+      default: 'https://github.com/OHD-Community-Devs',
+    },
+  },
 }
 </script>
 
@@ -102,7 +102,7 @@ export default {
   text-decoration: none;
   background-color: rgb(239, 91, 39);
 }
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
   .btn-group-btn-group {
     align-self: center;
     align-items: center;
@@ -123,7 +123,7 @@ export default {
     padding-top: var(--dl-space-space-halfunit);
   }
 }
-@media (max-width: 1200px) {
+@media(max-width: 1200px) {
   .btn-group-btn-group {
     width: 60%;
     margin-right: 0px;
@@ -134,7 +134,7 @@ export default {
     min-height: auto;
   }
 }
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .btn-group-btn-group {
     width: auto;
     max-width: auto;
@@ -143,12 +143,12 @@ export default {
     justify-content: center;
   }
 }
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .btn-group-btn-group {
     display: none;
   }
 }
-@media (max-width: 479px) {
+@media(max-width: 479px) {
   .btn-group-btn-group {
     width: 100%;
     display: none;

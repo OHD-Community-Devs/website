@@ -2,13 +2,13 @@
   <div class="privacy-policy-container">
     <div class="privacy-policy-container1">
       <header data-thq="thq-navbar" class="privacy-policy-navbar">
-        <router-link to="/" class="privacy-policy-navlink">
+        <nuxt-link to="/" class="privacy-policy-navlink">
           <img
             alt="image"
             src="https://cdn.statically.io/gh/Sudo-Ivan/MyWebsite-Assets/main/images/ohddev/web/logodesign1.png"
             class="privacy-policy-branding"
           />
-        </router-link>
+        </nuxt-link>
       </header>
       <btn-group1 rootClassName="btn-group1-root-class-name"></btn-group1>
     </div>
@@ -25,7 +25,7 @@
         <br />
         <span>
           Contact us at
-          <span v-html="rawuuk2"></span>
+          <span v-html="rawk8iw"></span>
         </span>
         <a
           href="mailto:support@ohdmodding.dev?subject="
@@ -45,22 +45,22 @@ import BtnGroup1 from '../components/btn-group1'
 export default {
   name: 'PrivacyPolicy',
   components: {
-    BtnGroup1
+    BtnGroup1,
   },
-  data () {
+  data() {
     return {
-      rawuuk2: ' '
+      rawk8iw: ' ',
     }
   },
-  metaInfo: {
+  head: {
     title: 'privacy-policy - OHD Open-Source Modding Community',
     meta: [
       {
         property: 'og:title',
-        content: 'privacy-policy - OHD Open-Source Modding Community'
-      }
-    ]
-  }
+        content: 'privacy-policy - OHD Open-Source Modding Community',
+      },
+    ],
+  },
 }
 </script>
 
