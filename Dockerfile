@@ -4,11 +4,11 @@ FROM node:16.19.1-alpine
 # Set the working directory to /app
 WORKDIR /app
 
-# Install dependencies
-RUN yarn install
-
 # Copy the yarn.lock files to the container
 COPY yarn.lock ./
+
+# Install dependencies
+RUN yarn install
 
 # Copy the rest of the files to the container
 COPY . .
