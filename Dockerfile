@@ -1,25 +1,28 @@
-# Use node v16 as the base image
-FROM node:16.19.1-alpine
+# use node 16 alpine image
+FROM node:16-alpine
 
-# Set the working directory to /app
+# create work directory in app folder
 WORKDIR /app
 
-# Copy the yarn.lock files to the container
-COPY yarn.lock ./
+# install required packages for node image
+RUN apk --no-cache add openssh g++ make python3 git
 
-# Install dependencies
-RUN yarn install --frozen-lockfile --production=false
-RUN yarn global add nuxi@3.2.0
-ENV PATH="${PATH}:/root/.yarn/bin:/root/.config/yarn/global/node_modules/.bin"
+# copy over package.json files
+COPY package.json /app/
+COPY yarn.lock /app/
 
-# Copy the rest of the files to the container
-COPY . .
+# install all depencies
+RUN yarn install --frozen-lockfile
 
-# Build the app
+# copy over all files to the work directory
+ADD . /app
+
+# build the project
 RUN yarn run build
 
-# Expose the app port
-EXPOSE 8080
+# expose the host and port 3000 to the server
+ENV HOST 0.0.0.0
+EXPOSE 3000
 
-# Start the app
-CMD ["yarn", "run", "start"]
+# run the build project with node
+ENTRYPOINT ["node", ".output/server/index.mjs"]
