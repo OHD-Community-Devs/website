@@ -10,7 +10,7 @@
               This is an Operation Harsh Doorstop community ran website, intended
               to help the Operation Harsh Doorstep modding community with our
               wiki&apos;s, tools and services which are provided
-              <span>{{ rawl8kz }}</span>
+              <span>{{ raw6vv9 }}</span>
             </span>
             <span class="f-a-q2-text01">completely free.</span>
           </p>

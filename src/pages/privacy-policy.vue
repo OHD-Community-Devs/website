@@ -25,7 +25,7 @@
         <br />
         <span>
           Contact us at
-          <span>{{ rawl8kz }}</span>
+          <span>{{ rawk8iw }}</span>
         </span>
         <a
           href="mailto:support@ohdmodding.dev?subject="
