@@ -16,9 +16,9 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Bringing Open-Source Resources to the Community'
-    }
-  }
+      default: 'Bringing Open-Source Resources to the Community',
+    },
+  },
 }
 </script>
 
@@ -43,7 +43,7 @@ export default {
   margin-top: var(--dl-space-space-twounits);
   text-align: center;
 }
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
   .component3-container {
     height: 100%;
   }
@@ -53,14 +53,14 @@ export default {
     margin-top: var(--dl-space-space-twounits);
   }
 }
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .component3-text {
     color: #ffffff;
     width: 100%;
     text-align: center;
   }
 }
-@media (max-width: 479px) {
+@media(max-width: 479px) {
   .component3-text {
     color: rgb(255, 255, 255);
     text-align: center;

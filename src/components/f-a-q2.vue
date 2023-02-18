@@ -1,18 +1,16 @@
 <template>
   <section class="f-a-q2-f-a-q">
-    <div class="f-a-q2-header">
-      <h2 class="f-a-q2-heading">{{ Heading }}</h2>
-    </div>
+    <div class="f-a-q2-header"><h2 class="f-a-q2-heading">{{ Heading }}</h2></div>
     <div class="f-a-q2-content">
       <div class="f-a-q2-column">
         <div class="f-a-q2-whatisthis">
           <h3 class="f-a-q2-header1">{{ Header }}</h3>
           <p class="f-a-q2-content1">
             <span>
-              This is an Operation Harsh Doorstop community ran website,
-              intended to help the Operation Harsh Doorstep modding community
-              with our wiki&apos;s, tools and services which are provided
-              <span>{{ rawk41q }}</span>
+              This is an Operation Harsh Doorstop community ran website, intended
+              to help the Operation Harsh Doorstep modding community with our
+              wiki&apos;s, tools and services which are provided
+              <span v-html="raw6vv9"></span>
             </span>
             <span class="f-a-q2-text01">completely free.</span>
           </p>
@@ -41,9 +39,9 @@
             </span>
             <br class="f-a-q2-text04" />
             <span class="f-a-q2-text05">
-              We will not monetize this website, we do not utilize ads or any
-              form of invasive tracking cookies, our tools, mods and wiki are
-              free and open to the community.
+              We will not monetize this website, we do not utilize ads or any form
+              of invasive tracking cookies, our tools, mods and wiki are free and
+              open to the community.
             </span>
           </p>
         </div>
@@ -57,8 +55,8 @@
           <h3 class="f-a-q2-header5">{{ Header4 }}</h3>
           <p class="f-a-q2-content5">
             <span>
-              This website is for the community, developed by the community.
-              Check out the source code:
+              This website is for the community, developed by the community. Check
+              out the source code:
             </span>
             <br />
             <a
@@ -75,8 +73,8 @@
           <h3 class="f-a-q2-header6">{{ Header5 }}</h3>
           <p class="f-a-q2-content6">
             <span class="f-a-q2-text08">
-              If you have an issue or want to report content, you can reach us
-              at anytime at:
+              If you have an issue or want to report content, you can reach us at
+              anytime at:
             </span>
             <br class="f-a-q2-text09" />
             <span class="f-a-q2-text10">support@ohdmodding.dev</span>
@@ -93,43 +91,43 @@ export default {
   props: {
     Heading: {
       type: String,
-      default: 'FAQ'
+      default: 'FAQ',
     },
     Header: {
       type: String,
-      default: 'What is this website?'
+      default: 'What is this website?',
     },
     Header1: {
       type: String,
-      default: 'Do you have a Discord?'
+      default: 'Do you have a Discord?',
     },
     Header2: {
       type: String,
-      default: 'How do you run the website?'
+      default: 'How do you run the website?',
     },
     Header3: {
       type: String,
-      default: 'What do you offer for modders?'
+      default: 'What do you offer for modders?',
     },
     Content: {
       type: String,
       default:
-        'We will eventually be offering a variety of free open-source tools to aid in your mod development, server management and much more. Our goal is to help create mod templates and lay the foundation for inexperienced modders.'
+        'We will eventually be offering a variety of free open-source tools to aid in your mod development, server management and much more. Our goal is to help create mod templates and lay the foundation for inexperienced modders.',
     },
     Header4: {
       type: String,
-      default: 'Can I contribute to your website?'
+      default: 'Can I contribute to your website?',
     },
     Header5: {
       type: String,
-      default: 'How do I report issues?'
+      default: 'How do I report issues?',
+    },
+  },
+  data() {
+    return {
+      raw6vv9: ' ',
     }
   },
-  data () {
-    return {
-      rawk41q: ' '
-    }
-  }
 }
 </script>
 
@@ -384,7 +382,7 @@ export default {
 .f-a-q2-text10 {
   color: #e4a300;
 }
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
   .f-a-q2-content2 {
     color: rgb(255, 255, 255);
   }
@@ -401,7 +399,7 @@ export default {
     text-decoration: underline;
   }
 }
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .f-a-q2-f-a-q {
     padding-bottom: var(--dl-space-space-fiveunits);
   }
@@ -471,7 +469,7 @@ export default {
     line-height: 21px;
   }
 }
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .f-a-q2-f-a-q {
     gap: var(--dl-space-space-threeunits);
     padding-top: var(--dl-space-space-threeunits);
@@ -559,7 +557,7 @@ export default {
     line-height: 20px;
   }
 }
-@media (max-width: 479px) {
+@media(max-width: 479px) {
   .f-a-q2-header {
     gap: 0px;
     align-items: flex-start;
