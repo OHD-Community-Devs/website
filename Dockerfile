@@ -9,6 +9,8 @@ COPY yarn.lock ./
 
 # Install dependencies
 RUN yarn install
+RUN yarn global add nuxi@3.2.0
+ENV PATH="${PATH}:/root/.yarn/bin:/root/.config/yarn/global/node_modules/.bin"
 
 # Copy the rest of the files to the container
 COPY . .
