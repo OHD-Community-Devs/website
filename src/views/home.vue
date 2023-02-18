@@ -10,7 +10,7 @@
               class="home-branding"
             />
           </header>
-          <app-navbarbtngroup1></app-navbarbtngroup1>
+          <app-navbarbtngroup2></app-navbarbtngroup2>
         </div>
       </div>
     </section>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import AppNavbarbtngroup1 from '../components/navbarbtngroup1'
+import AppNavbarbtngroup2 from '../components/navbarbtngroup2'
 import AppHeading from '../components/heading'
 import AppComponent5 from '../components/component5'
 import AppWikibtn from '../components/wikibtn'
@@ -35,23 +35,23 @@ import AppFooter1 from '../components/footer1'
 export default {
   name: 'Home',
   components: {
-    AppNavbarbtngroup1,
+    AppNavbarbtngroup2,
     AppHeading,
     AppComponent5,
     AppWikibtn,
     AppModshowcase2,
     FAQ3,
-    AppFooter1
+    AppFooter1,
   },
   metaInfo: {
     title: 'OHD Open-Source Modding Community',
     meta: [
       {
         property: 'og:title',
-        content: 'OHD Open-Source Modding Community'
-      }
-    ]
-  }
+        content: 'OHD Open-Source Modding Community',
+      },
+    ],
+  },
 }
 </script>
 
@@ -107,7 +107,7 @@ export default {
   width: 120px;
   object-fit: cover;
 }
-@media (max-width: 1600px) {
+@media(max-width: 1600px) {
   .home-hero {
     padding-left: 0px;
   }
@@ -125,7 +125,7 @@ export default {
     margin-left: var(--dl-space-space-twounits);
   }
 }
-@media (max-width: 1200px) {
+@media(max-width: 1200px) {
   .home-n-v-container {
     width: 100%;
   }
@@ -136,7 +136,7 @@ export default {
     justify-content: flex-start;
   }
 }
-@media (max-width: 991px) {
+@media(max-width: 991px) {
   .home-hero {
     padding-left: var(--dl-space-space-oneandhalfunits);
   }
@@ -153,7 +153,7 @@ export default {
     justify-content: flex-start;
   }
 }
-@media (max-width: 767px) {
+@media(max-width: 767px) {
   .home-n-v-container {
     width: 100%;
   }
@@ -161,7 +161,7 @@ export default {
     width: 100%;
   }
 }
-@media (max-width: 479px) {
+@media(max-width: 479px) {
   .home-hero {
     padding-left: 0px;
   }
