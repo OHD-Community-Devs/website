@@ -19,14 +19,14 @@ import BtnGroup from './btn-group'
 export default {
   name: 'Hero1',
   props: {
+    Branding_alt: {
+      type: String,
+      default: 'image',
+    },
     Branding_src: {
       type: String,
       default:
         'https://cdn.statically.io/gh/Sudo-Ivan/MyWebsite-Assets/main/images/ohddev/web/logodesign1.png',
-    },
-    Branding_alt: {
-      type: String,
-      default: 'image',
     },
   },
   components: {

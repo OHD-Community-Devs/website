@@ -15,13 +15,13 @@
 export default {
   name: 'Wikibtn',
   props: {
-    Wiki: {
-      type: String,
-      default: 'Visit Our Wiki',
-    },
     link_Wiki: {
       type: String,
       default: 'https://wiki.ohdmodding.dev',
+    },
+    Wiki: {
+      type: String,
+      default: 'Visit Our Wiki',
     },
   },
 }

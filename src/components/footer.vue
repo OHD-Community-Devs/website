@@ -20,13 +20,13 @@
               >
                 {{ text1 }}
               </a>
-              <router-link to="/privacy-policy" class="footer-navlink">
+              <nuxt-link to="/privacy-policy" class="footer-navlink">
                 {{ text2 }}
-              </router-link>
-              <router-link to="/" class="footer-navlink1">
+              </nuxt-link>
+              <nuxt-link to="/" class="footer-navlink1">
                 <span class="footer-text3">Join Our Discord</span>
                 <br />
-              </router-link>
+              </nuxt-link>
             </div>
           </div>
         </div>

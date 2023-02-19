@@ -10,7 +10,7 @@
               This is an Operation Harsh Doorstop community ran website, intended
               to help the Operation Harsh Doorstep modding community with our
               wiki&apos;s, tools and services which are provided
-              <span>{{ raw90cd }}</span>
+              <span v-html="raww70e"></span>
             </span>
             <span class="f-a-q3-text01">completely free.</span>
           </p>
@@ -93,9 +93,14 @@ export default {
       type: String,
       default: 'FAQ',
     },
-    Header: {
+    Content: {
       type: String,
-      default: 'What is this website?',
+      default:
+        'We will eventually be offering a variety of free open-source tools to aid in your mod development, server management and much more. Our goal is to help create mod templates and lay the foundation for inexperienced modders.',
+    },
+    Header3: {
+      type: String,
+      default: 'What do you offer for modders?',
     },
     Header1: {
       type: String,
@@ -105,27 +110,22 @@ export default {
       type: String,
       default: 'How do you run the website?',
     },
-    Header3: {
+    Header5: {
       type: String,
-      default: 'What do you offer for modders?',
-    },
-    Content: {
-      type: String,
-      default:
-        'We will eventually be offering a variety of free open-source tools to aid in your mod development, server management and much more. Our goal is to help create mod templates and lay the foundation for inexperienced modders.',
+      default: 'How do I report issues?',
     },
     Header4: {
       type: String,
       default: 'Can I contribute to your website?',
     },
-    Header5: {
+    Header: {
       type: String,
-      default: 'How do I report issues?',
+      default: 'What is this website?',
     },
   },
   data() {
     return {
-      raw90cd: ' ',
+      raww70e: ' ',
     }
   },
 }

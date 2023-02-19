@@ -13,20 +13,19 @@
         <div class="footer1-links">
           <div class="footer1-column">
             <div class="footer1-list">
-              <a :href="link_text" class="footer1-link">{{ text }}</a>
               <a
                 href="mailto:support@ohdmodding.dev?subject="
-                class="footer1-link1"
+                class="footer1-link"
               >
                 {{ text1 }}
               </a>
-              <router-link to="/privacy-policy" class="footer1-navlink">
+              <nuxt-link to="/privacy-policy" class="footer1-navlink">
                 {{ text2 }}
-              </router-link>
-              <router-link to="/" class="footer1-navlink1">
+              </nuxt-link>
+              <nuxt-link to="/" class="footer1-navlink1">
                 <span class="footer1-text3">Join Our Discord</span>
                 <br />
-              </router-link>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -39,14 +38,6 @@
 export default {
   name: 'Footer1',
   props: {
-    text: {
-      type: String,
-      default: 'Wiki',
-    },
-    link_text: {
-      type: String,
-      default: 'https://wiki.ohdmodding.dev',
-    },
     text1: {
       type: String,
       default: 'Contact Us',
@@ -134,16 +125,6 @@ export default {
 .footer1-link:hover {
   opacity: .5;
 }
-.footer1-link1 {
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.3s;
-  line-height: 32px;
-  text-decoration: none;
-}
-.footer1-link1:hover {
-  opacity: .5;
-}
 .footer1-navlink {
   cursor: pointer;
   font-size: 16px;
@@ -228,11 +209,6 @@ export default {
     justify-content: center;
   }
   .footer1-link {
-    font-size: 16px;
-    line-height: 32px;
-    text-decoration: none;
-  }
-  .footer1-link1 {
     line-height: 32px;
   }
   .footer1-navlink {
