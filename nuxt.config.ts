@@ -54,14 +54,6 @@ const config: NuxtConfig = {
       availableLocales: ['en', 'tr'],
     },
   },
-  typescript: {
-    tsConfig: {
-      compilerOptions: {
-        strict: true,
-        types: ['@pinia/nuxt', './type.d.ts'],
-      },
-    },
-  },
   colorMode: {
     classSuffix: '',
     fallback: 'light',
@@ -83,6 +75,10 @@ const config: NuxtConfig = {
 
         next();
       },
+    },
+    {
+      path: '/src/middleware',
+      handler: '~/src/middleware',
     },
   ],
 };
