@@ -1,6 +1,8 @@
-import presetIcons from '@unocss/preset-icons'
+import presetIcons from '@unocss/preset-icons';
+import { NuxtConfig } from '@nuxt/types';
+import { NuxtRequest, NuxtResponse } from '@nuxt/types';
 
-export default defineNuxtConfig({
+const config: NuxtConfig = {
   srcDir: 'src',
   modules: [
     '@vueuse/nuxt',
@@ -27,7 +29,6 @@ export default defineNuxtConfig({
     ],
     safelist: ['i-twemoji-flag-us-outlying-islands', 'i-twemoji-flag-turkey'],
   },
-
   // localization - i18n config
   i18n: {
     locales: [
@@ -53,7 +54,6 @@ export default defineNuxtConfig({
       availableLocales: ['en', 'tr'],
     },
   },
-
   typescript: {
     tsConfig: {
       compilerOptions: {
@@ -67,12 +67,24 @@ export default defineNuxtConfig({
     fallback: 'light',
     storageKey: 'color-mode',
   },
-
   tailwindcss: {
     configPath: './tailwind.config.ts',
   },
-
   vite: {
     logLevel: 'info',
   },
-})
+  serverMiddleware: [
+    {
+      path: '/src',
+      handler: (req: NuxtRequest, res: NuxtResponse, next: Function) => {
+        res.setHeader('Access-Control-Allow-Origin', 'https://ohdmodding.dev');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+        next();
+      },
+    },
+  ],
+};
+
+export default config;
