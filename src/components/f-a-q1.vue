@@ -10,7 +10,7 @@
               This is an Operation Harsh Doorstop community ran website, intended
               to help the Operation Harsh Doorstep modding community with our
               wiki&apos;s, tools and services which are provided
-              <span v-html="rawdgo9"></span>
+              <span>{{ rawe2b7 }}</span>
             </span>
             <span class="f-a-q1-text01">completely free.</span>
           </p>
@@ -125,7 +125,7 @@ export default {
   },
   data() {
     return {
-      rawdgo9: ' ',
+      rawe2b7: ' ',
     }
   },
 }
