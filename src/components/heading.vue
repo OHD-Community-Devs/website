@@ -55,6 +55,11 @@ export default {
     margin-top: var(--dl-space-space-twounits);
   }
 }
+@media(max-width: 991px) {
+  .heading-text5 {
+    font-family: Arial Black;
+  }
+}
 @media(max-width: 767px) {
   .heading-text {
     color: #ffffff;
@@ -65,7 +70,9 @@ export default {
 @media(max-width: 479px) {
   .heading-text {
     color: rgb(255, 255, 255);
+    font-size: 36px;
     text-align: center;
+    font-family: Arial Black;
   }
   .heading-text5 {
     width: 80%;

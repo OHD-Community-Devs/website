@@ -10,13 +10,29 @@
               class="home-branding"
             />
           </header>
-          <app-navbarbtngroup2></app-navbarbtngroup2>
+          <div class="home-navbarbtngroup">
+            <a
+              href="https://discord.gg/HW7czZnA7p"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-discord button"
+            >
+              Discord
+            </a>
+            <a
+              href="https://github.com/OHD-Community-Devs"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-git-hub button"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <app-heading></app-heading>
     <app-component5></app-component5>
-    <app-wikibtn></app-wikibtn>
     <app-modshowcase2></app-modshowcase2>
     <f-a-q3></f-a-q3>
     <app-footer1></app-footer1>
@@ -24,10 +40,8 @@
 </template>
 
 <script>
-import AppNavbarbtngroup2 from '../components/navbarbtngroup2'
 import AppHeading from '../components/heading'
 import AppComponent5 from '../components/component5'
-import AppWikibtn from '../components/wikibtn'
 import AppModshowcase2 from '../components/modshowcase2'
 import FAQ3 from '../components/f-a-q3'
 import AppFooter1 from '../components/footer1'
@@ -35,15 +49,13 @@ import AppFooter1 from '../components/footer1'
 export default {
   name: 'Home',
   components: {
-    AppNavbarbtngroup2,
     AppHeading,
     AppComponent5,
-    AppWikibtn,
     AppModshowcase2,
     FAQ3,
     AppFooter1,
   },
-  metaInfo: {
+  head: {
     title: 'OHD Open-Source Modding Community',
     meta: [
       {
@@ -107,6 +119,46 @@ export default {
   width: 120px;
   object-fit: cover;
 }
+.home-navbarbtngroup {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.home-discord {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  min-width: auto;
+  align-self: center;
+  font-style: normal;
+  max-height: auto;
+  text-align: center;
+  font-weight: 700;
+  padding-top: var(--dl-space-space-unit);
+  border-width: 0px;
+  margin-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: transparent;
+}
+.home-git-hub {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  min-width: auto;
+  font-style: normal;
+  max-height: auto;
+  text-align: center;
+  font-weight: 700;
+  padding-top: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+  background-color: transparent;
+}
 @media(max-width: 1600px) {
   .home-hero {
     padding-left: 0px;
@@ -124,6 +176,23 @@ export default {
     width: 100%;
     margin-left: var(--dl-space-space-twounits);
   }
+  .home-navbarbtngroup {
+    align-self: center;
+    align-items: center;
+    margin-right: 5%;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .home-discord {
+    max-height: auto;
+    padding-top: var(--dl-space-space-unit);
+    background-color: transparent;
+  }
+  .home-git-hub {
+    max-height: auto;
+    padding-top: var(--dl-space-space-unit);
+    background-color: transparent;
+  }
 }
 @media(max-width: 1200px) {
   .home-n-v-container {
@@ -134,6 +203,15 @@ export default {
     max-width: auto;
     margin-left: var(--dl-space-space-twounits);
     justify-content: flex-start;
+  }
+  .home-navbarbtngroup {
+    width: 60%;
+    margin-right: 0px;
+    justify-content: flex-end;
+  }
+  .home-discord {
+    margin-top: var(--dl-space-space-unit);
+    margin-bottom: var(--dl-space-space-unit);
   }
 }
 @media(max-width: 991px) {
@@ -152,6 +230,13 @@ export default {
     margin-right: 0px;
     justify-content: flex-start;
   }
+  .home-navbarbtngroup {
+    width: auto;
+    max-width: auto;
+    min-width: auto;
+    align-self: center;
+    justify-content: center;
+  }
 }
 @media(max-width: 767px) {
   .home-n-v-container {
@@ -159,6 +244,9 @@ export default {
   }
   .home-navbar {
     width: 100%;
+  }
+  .home-navbarbtngroup {
+    display: none;
   }
 }
 @media(max-width: 479px) {
@@ -171,6 +259,24 @@ export default {
     align-self: center;
     flex-direction: column;
     justify-content: center;
+  }
+  .home-navbarbtngroup {
+    width: 100%;
+    display: none;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    justify-content: center;
+  }
+  .home-discord {
+    width: 101px;
+    height: 48px;
+    font-size: 12px;
+    padding-top: var(--dl-space-space-unit);
+  }
+  .home-git-hub {
+    width: 41px;
+    height: 0px;
+    font-size: 9px;
   }
 }
 </style>

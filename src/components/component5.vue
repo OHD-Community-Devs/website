@@ -24,4 +24,9 @@ export default {
 .component5-w-i-p {
   color: rgb(255, 255, 255);
 }
+@media(max-width: 991px) {
+  .component5-w-i-p {
+    font-family: Arial;
+  }
+}
 </style>
