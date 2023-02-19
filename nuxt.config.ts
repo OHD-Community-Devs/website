@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
+    '@nuxtjs/robots',
   ],
   build: {
     transpile: ['@headlessui/vue'],
