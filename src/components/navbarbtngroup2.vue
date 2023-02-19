@@ -35,13 +35,13 @@ export default {
       type: String,
       default: 'Wiki',
     },
-    link_Wiki: {
-      type: String,
-      default: 'https://wiki.ohdmodding.dev',
-    },
     Discord: {
       type: String,
       default: 'Discord',
+    },
+    link_GitHub: {
+      type: String,
+      default: 'https://github.com/OHD-Community-Devs',
     },
     link_Discord: {
       type: String,
@@ -51,9 +51,9 @@ export default {
       type: String,
       default: 'GitHub',
     },
-    link_GitHub: {
+    link_Wiki: {
       type: String,
-      default: 'https://github.com/OHD-Community-Devs',
+      default: 'https://wiki.ohdmodding.dev',
     },
   },
 }

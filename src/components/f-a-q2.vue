@@ -89,38 +89,38 @@
 export default {
   name: 'FAQ2',
   props: {
-    Heading: {
-      type: String,
-      default: 'FAQ',
-    },
-    Header: {
-      type: String,
-      default: 'What is this website?',
-    },
-    Header1: {
-      type: String,
-      default: 'Do you have a Discord?',
-    },
     Header2: {
       type: String,
       default: 'How do you run the website?',
-    },
-    Header3: {
-      type: String,
-      default: 'What do you offer for modders?',
     },
     Content: {
       type: String,
       default:
         'We will eventually be offering a variety of free open-source tools to aid in your mod development, server management and much more. Our goal is to help create mod templates and lay the foundation for inexperienced modders.',
     },
-    Header4: {
+    Header1: {
       type: String,
-      default: 'Can I contribute to your website?',
+      default: 'Do you have a Discord?',
+    },
+    Heading: {
+      type: String,
+      default: 'FAQ',
+    },
+    Header3: {
+      type: String,
+      default: 'What do you offer for modders?',
     },
     Header5: {
       type: String,
       default: 'How do I report issues?',
+    },
+    Header4: {
+      type: String,
+      default: 'Can I contribute to your website?',
+    },
+    Header: {
+      type: String,
+      default: 'What is this website?',
     },
   },
   data() {

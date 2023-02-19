@@ -31,9 +31,13 @@
 export default {
   name: 'Navbarbtngroup1',
   props: {
-    Wiki: {
+    GitHub: {
       type: String,
-      default: 'Wiki',
+      default: 'GitHub',
+    },
+    link_GitHub: {
+      type: String,
+      default: 'https://github.com/OHD-Community-Devs',
     },
     link_Wiki: {
       type: String,
@@ -47,13 +51,9 @@ export default {
       type: String,
       default: 'https://discord.gg/HW7czZnA7p',
     },
-    GitHub: {
+    Wiki: {
       type: String,
-      default: 'GitHub',
-    },
-    link_GitHub: {
-      type: String,
-      default: 'https://github.com/OHD-Community-Devs',
+      default: 'Wiki',
     },
   },
 }
